@@ -214,7 +214,7 @@ li {
 
 .wrapper {
     max-width: 1360px;
-    width: 50%;
+    width: 53%;
     margin: 0 auto;
 }
 
@@ -233,6 +233,7 @@ header {
     padding-top: 30px;
     position: absolute;
     top: 0;
+    z-index: 1;
 }
 
 header .wrapper {
@@ -277,7 +278,7 @@ header .wrapper {
 input[name=search],
 input[name=search-btn] {
     flex-basis: 80%;
-    padding: 5px 2%;
+    padding: 8px 2%;
     border: none;
     outline: none;
 }
@@ -296,6 +297,7 @@ nav {
     flex-basis: 100%;
     margin-top: 44px;
     background: linear-gradient(to right, #2c7fc6, #2260ab);
+    opacity: 0.9;
 }
 
 .navigation {
@@ -334,11 +336,24 @@ nav {
   main styling starts here
 =================================*/
 
+
+/*banner start here*/
+
 .hero-section {
     padding: 233px 0 104px 0;
-    background: radial-gradient() url("../images/bg.jpg") center no-repeat;
+    position: relative;
+    background: url("../images/bg.jpg") center no-repeat;
     background-size: cover;
-    background-blend-mode: multiply;
+}
+
+.hero-section::before {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    background: radial-gradient( transparent, #225fab);
+    content: "";
 }
 
 .hero-section-title {
@@ -355,6 +370,116 @@ nav {
 }
 
 
+/*banner ends here*/
+
+
+/*form details start here*/
+
+.form-details {
+    padding: 30px 0 101px 0;
+    position: relative;
+}
+
+.tabs {
+    padding-bottom: 25px;
+    display: flex;
+}
+
+.tab {
+    margin-right: 2%;
+    font-size: 12px;
+}
+
+.tab a {
+    color: #777;
+}
+
+.active-tab a {
+    color: #000;
+}
+
+.tab:last-child {
+    flex: 1;
+}
+
+.tab:last-child::before {
+    margin-right: 2%;
+    font-family: 'FontAwesome';
+    font-weight: 900;
+    content: '\f105';
+}
+
+.form-details-title {
+    width: 100%;
+    padding-bottom: 15px;
+    color: #458acf;
+    font-size: 24px;
+}
+
+label {
+    font-size: 12px;
+}
+
+.input {
+    width: 32%;
+    padding: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-form input {
+    flex-basis: 98%;
+    padding: 7px 2%;
+    border: 1px solid #dfdfdf;
+    outline: none;
+}
+
+.err {
+    display: none;
+}
+
+select {
+    flex: 1 100%;
+    padding: 7px 4%;
+    border: none;
+    outline: none;
+    background-color: #369fe3;
+    color: #fff;
+    appearance: none;
+    cursor: pointer;
+}
+
+.ico::before {
+    position: relative;
+    top: 21px;
+    left: 85%;
+    color: #fff;
+    font-family: 'FontAwesome';
+    font-weight: 900;
+    font-size: 12px;
+    content: '\f0dc';
+}
+
+.info {
+    width: 100%;
+    padding-bottom: 10px;
+    color: #454545;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+input[name=submit] {
+    padding: 7px 7%;
+    background-color: #369fe3;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+
 /*=================================
   main styling ends here
 =================================*/
@@ -364,10 +489,204 @@ nav {
   footer styling starts here
 =================================*/
 
+footer {
+    padding-top: 38px;
+    position: relative;
+    background: linear-gradient(to left, #1e3162, #215fa9);
+}
+
+.footer-items {
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.footer-item:first-child {
+    flex-basis: 25%;
+}
+
+.footer-item {
+    margin-right: 10%;
+}
+
+.footer-item:last-child {
+    margin-right: 0;
+}
+
+.footer-item p {
+    display: relative;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-item p::before {
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+    display: block;
+    background-color: #2163a1;
+    content: "";
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+}
+
+footer h6 {
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.page a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-item:last-child {
+    flex: 1;
+}
+
+.link {
+    margin-right: 2%;
+}
+
+.link:last-child {
+    margin-right: 0;
+}
+
+.link a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    background-color: #fff;
+    font-family: 'FontAwesome';
+    font-weight: 900;
+    text-indent: -9999px;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:first-child a::before {
+    color: #2878b5;
+    text-indent: 0;
+    content: '\f0e1';
+    float: right;
+}
+
+.link:nth-child(2) a::before {
+    color: #39a1f2;
+    text-indent: 0;
+    content: '\f099';
+    float: right;
+}
+
+.link:nth-child(3) a::before {
+    color: #f62100;
+    text-indent: 0;
+    content: '\f04b';
+    float: right;
+}
+
+.link:nth-child(4) a::before {
+    color: #4a6baf;
+    text-indent: 0;
+    content: '\f39e';
+    float: right;
+}
+
+footer .wrapper-large {
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    background: #0f2d59;
+}
+
+.copyright {
+    display: flex;
+}
+
+.last-links {
+    flex: 1;
+    display: flex;
+}
+
+.last-link {
+    padding: 0 1%;
+    border-right: 1px solid #fff;
+    margin-right: 1%;
+}
+
+.last-link:last-child {
+    border-right: none;
+    margin-right: 0;
+}
+
+.last-link a {
+    color: #fff;
+    font-size: 10px;
+}
+
+.copy {
+    display: flex;
+    color: #fff;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /*=================================
   footer styling ends here
 =================================*/
+
+
+/*hover items*/
+
+.page a:hover,
+.last-link a:hover,
+.link a:hover::before {
+    color: #777;
+}
+
+.tab a:hover {
+    color: #000;
+}
+
+.icon a {
+    position: absolute;
+    right: 5%;
+    color: #fff;
+    font-size: 21px;
+    text-indent: -9999px;
+}
+
+.icon a::before {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    background-color: #777;
+    font-family: 'FontAwesome';
+    font-weight: 900;
+    text-indent: 0;
+    content: '\f106';
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+
+.up a {
+    top: 120px;
+}
+
+.mid a {
+    bottom: 30px;
+}
+
+
+/*hover items end here*/
 
 
 /*media query starts*/
