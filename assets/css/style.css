@@ -229,12 +229,40 @@ li {
 =================================*/
 
 header {
-    padding: 30px;
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
 }
 
 header .wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo::before,
+.logo::after {
+    width: 8%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    background-color: #3fbff3;
+    content: "";
+}
+
+.logo::before {
+    top: -10px;
+    right: -5%;
+}
+
+.logo::after {
+    top: -3px;
+    right: -8%;
+    transform: rotateZ(90deg);
 }
 
 .search form {
@@ -246,10 +274,54 @@ header .wrapper {
     display: flex;
 }
 
-input[name=search] {
+input[name=search],
+input[name=search-btn] {
+    flex-basis: 80%;
     padding: 5px 2%;
     border: none;
     outline: none;
+}
+
+input[name=search-btn] {
+    flex: 1;
+    padding: 5px 40%;
+    background-color: #369fe3;
+    color: #fff;
+}
+
+
+/*navbar*/
+
+nav {
+    flex-basis: 100%;
+    margin-top: 44px;
+    background: linear-gradient(to right, #2c7fc6, #2260ab);
+}
+
+.navigation {
+    flex: 1;
+    padding: 5px 0;
+    display: flex;
+}
+
+.nav-item {
+    padding: 2px 1%;
+    border-right: 1px solid #37a6e0;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+}
+
+.nav-item:last-child {
+    border-right: none;
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+.nav-item a:hover {
+    color: #4aa3e3;
 }
 
 
@@ -261,6 +333,26 @@ input[name=search] {
 /*=================================
   main styling starts here
 =================================*/
+
+.hero-section {
+    padding: 233px 0 104px 0;
+    background: radial-gradient() url("../images/bg.jpg") center no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.hero-section-title {
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.hero-section-sub-title {
+    width: 60%;
+    color: #6fcaf4;
+    font-size: 24px;
+}
 
 
 /*=================================
