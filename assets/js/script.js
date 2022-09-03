@@ -123,6 +123,10 @@ function checkValidator(check,err) {
     }
 }
 
+function clearField(){
+    form.reset();
+}
+
 //validation function to initialize form values
 function validation(e) {
     let fname = document.forms['sign-up']['first-name'].value;
@@ -137,6 +141,7 @@ function validation(e) {
     validators(fields);
     if (validInput) {
        alert("thanks"+" "+fname);
+       clearField();
     }
     e.preventDefault();
 }
