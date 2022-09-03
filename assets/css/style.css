@@ -399,7 +399,6 @@ label {
     display: flex;
     flex-direction: column;
 }
-
 .sign-up-form input {
     flex-basis: 98%;
     padding: 7px 2%;
@@ -450,7 +449,7 @@ input[name=submit] {
     text-transform: capitalize;
 }
 
-.checkbox {
+.checkbox ,input[type=checkbox]{
     cursor: pointer;
 }
 /*=================================
