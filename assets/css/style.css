@@ -1,7 +1,10 @@
 @charset "utf-8";
+
 /* ==========================================================================
 1. CSS Reset Code
 ========================================================================== */
+
+
 /* 1.1. Eric Meyers Reset
 http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
@@ -96,6 +99,8 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -111,16 +116,22 @@ nav,
 section {
     display: block;
 }
+
+
 /* Force scrollbar */
 
 html {
     overflow-y: scroll;
 }
+
+
 /* Align radios and text inputs with their label */
 
 input[type='radio'] {
     vertical-align: text-bottom;
 }
+
+
 /* Hand cursor on clickable input elements */
 
 label,
@@ -161,6 +172,8 @@ sup {
 sub {
     bottom: -.25em;
 }
+
+
 /* 1.2. Clear Fix
 ========================== */
 
@@ -177,6 +190,8 @@ sub {
 .cf {
     *zoom: 1;
 }
+
+
 /*for all*/
 
 body {
@@ -193,6 +208,8 @@ li {
     display: inline-block;
     list-style-type: none;
 }
+
+
 /*for wrapper*/
 
 .wrapper {
@@ -205,14 +222,11 @@ li {
     width: 100%;
     margin: 0 auto;
 }
+
+
 /*=================================
 Header styling starts here
 =================================*/
-<<<<<<< HEAD
-    
-    .menu {
-        display: none;
-=======
 
 .menu {
     display: none;
@@ -279,6 +293,8 @@ input[name=search-btn] {
     background-color: #369fe3;
     color: #fff;
 }
+
+
 /*navbar*/
 
 nav {
@@ -313,12 +329,18 @@ nav {
 .nav-item a:hover {
     color: #4aa3e3;
 }
+
+
 /*=================================
 Header styling ends here
 =================================*/
+
+
 /*=================================
 main styling starts here
 =================================*/
+
+
 /*banner start here*/
 
 .hero-section {
@@ -350,7 +372,11 @@ main styling starts here
     color: #6fcaf4;
     font-size: 24px;
 }
+
+
 /*banner ends here*/
+
+
 /*form details start here*/
 
 .form-details {
@@ -404,6 +430,7 @@ label {
     display: flex;
     flex-direction: column;
 }
+
 .sign-up-form input {
     flex-basis: 98%;
     padding: 7px 2%;
@@ -454,12 +481,17 @@ input[name=submit] {
     text-transform: capitalize;
 }
 
-.checkbox ,input[type=checkbox]{
+.checkbox,
+input[type=checkbox] {
     cursor: pointer;
 }
+
+
 /*=================================
 main styling ends here
 =================================*/
+
+
 /*=================================
 footer styling starts here
 =================================*/
@@ -610,9 +642,13 @@ footer .wrapper-large {
     align-items: center;
     justify-content: center;
 }
+
+
 /*=================================
 footer styling ends here
 =================================*/
+
+
 /*hover items*/
 
 .page a:hover,
@@ -655,16 +691,23 @@ footer styling ends here
 .mid a {
     bottom: 30px;
 }
+
+
 /*hover items end here*/
+
+
 /*media query starts*/
+
+
 /*media query for 995px starts here*/
 
 @media only screen and (max-width: 995px) {
     .wrapper {
         width: 75%;
->>>>>>> beffa1050de6e77aace5d695f2dae83810d06866
     }
 }
+
+
 /*media query for 768px starts here*/
 
 @media only screen and (max-width: 768px) {
@@ -683,16 +726,11 @@ footer styling ends here
     .navigation {
         margin: 0 auto;
         display: none;
-<<<<<<< HEAD
-        color: #f00;
-        text-transform: capitalize;
-=======
         position: absolute;
         left: 0;
         right: 0;
         flex-direction: column;
         z-index: -1;
->>>>>>> feature-css
     }
     .nav-item {
         border-bottom: 1px solid #fff;
@@ -703,34 +741,16 @@ footer styling ends here
         justify-content: center;
         align-items: center;
     }
-<<<<<<< HEAD
-    
-    .nav-item:last-child {
-        border-right: none;
-    }
-    
-    .nav-item a {
-        color: #fff;
-    }
-    
-    .nav-item a:hover {
-        color: #4aa3e3;
-    }
-    /*=================================
-  Header styling ends here
-=================================*/
     /*=================================
   main styling starts here
 =================================*/
     /*banner start here*/
-    
     .hero-section {
         padding: 233px 0 104px 0;
         position: relative;
         background: url("../images/bg.jpg") center no-repeat;
         background-size: cover;
     }
-    
     .hero-section::before {
         width: 100%;
         height: 100%;
@@ -739,18 +759,17 @@ footer styling ends here
         top: 0;
         background: radial-gradient( transparent, #225fab);
         content: "";
-=======
+    }
     .menu::before {
         text-indent: 0;
         content: '\f0c9';
         float: right;
->>>>>>> beffa1050de6e77aace5d695f2dae83810d06866
     }
     .menu:hover::before {
         color: #fff;
     }
-    .footer-item:nth-child(2){
-        margin:0 3%;
+    .footer-item:nth-child(2) {
+        margin: 0 3%;
     }
     label {
         font-size: 16px;
@@ -759,6 +778,8 @@ footer styling ends here
         width: 50%;
     }
 }
+
+
 /*media query for 540px starts here*/
 
 @media only screen and (max-width: 540px) {
@@ -788,11 +809,9 @@ footer styling ends here
     .footer-item:nth-child(2) {
         margin: 40px 0;
     }
-
     .link {
         margin-right: 0;
     }
-
     .copyright {
         flex-direction: column;
         justify-content: center;
@@ -815,10 +834,11 @@ footer styling ends here
     .mid a {
         bottom: 50px;
     }
-    .copy{
+    .copy {
         padding-top: 10px;
     }
 }
+
 
 /*media query for 425px starts here*/
 
