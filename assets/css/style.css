@@ -677,11 +677,16 @@ footer styling ends here
     .navigation {
         margin: 0 auto;
         display: none;
+<<<<<<< HEAD
+        color: #f00;
+        text-transform: capitalize;
+=======
         position: absolute;
         left: 0;
         right: 0;
         flex-direction: column;
         z-index: -1;
+>>>>>>> feature-css
     }
     .nav-item {
         border-bottom: 1px solid #fff;
