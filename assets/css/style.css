@@ -441,6 +441,7 @@ label {
 .err {
     display: none;
     color: #f00;
+    font-size: 12px;
     text-transform: capitalize;
 }
 
