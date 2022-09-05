@@ -356,7 +356,11 @@ main styling starts here
     display: block;
     position: absolute;
     top: 0;
+<<<<<<< HEAD
     background: radial-gradient( transparent, #225fab);
+=======
+    background: radial-gradient( ellipse farthest-side at 80%, transparent 5%, #225fab 95%);
+>>>>>>> feature-css
     content: "";
 }
 
@@ -441,6 +445,10 @@ label {
 .err {
     display: none;
     color: #f00;
+<<<<<<< HEAD
+=======
+    font-size: 12px;
+>>>>>>> feature-css
     text-transform: capitalize;
 }
 
@@ -662,11 +670,19 @@ footer styling ends here
 }
 
 .icon a {
+<<<<<<< HEAD
     position: absolute;
+=======
+    position: fixed;
+>>>>>>> feature-css
     right: 5%;
     color: #fff;
     font-size: 21px;
     text-indent: -9999px;
+<<<<<<< HEAD
+=======
+    z-index: 1;
+>>>>>>> feature-css
 }
 
 .icon a::before {
@@ -689,6 +705,10 @@ footer styling ends here
 }
 
 .mid a {
+<<<<<<< HEAD
+=======
+    display: none;
+>>>>>>> feature-css
     bottom: 30px;
 }
 
@@ -783,19 +803,33 @@ footer styling ends here
 /*media query for 540px starts here*/
 
 @media only screen and (max-width: 540px) {
+<<<<<<< HEAD
+=======
+    .search {
+        display: none;
+    }
+    .logo {
+        width: 40%;
+    }
+>>>>>>> feature-css
     header .wrapper {
         flex-wrap: wrap;
     }
     .input {
         width: 80%;
     }
+<<<<<<< HEAD
     .search {
+=======
+    /* .search {
+>>>>>>> feature-css
         order: 1;
         flex-basis: 100%;
         padding: 20px 0;
         display: flex;
         align-items: center;
         justify-content: center;
+<<<<<<< HEAD
     }
     .footer-items {
         flex-direction: column;
@@ -804,11 +838,25 @@ footer styling ends here
     }
     .footer-item {
         flex: 1 100%;
+=======
+    } */
+    .footer-items {
+        flex-direction: column;
+    }
+    .footer-item {
+        flex: 1 40%;
+>>>>>>> feature-css
         margin: 10px 0;
     }
     .footer-item:nth-child(2) {
         margin: 40px 0;
     }
+<<<<<<< HEAD
+=======
+    .footer-item p::before {
+        width: 40%;
+    }
+>>>>>>> feature-css
     .link {
         margin-right: 0;
     }
@@ -833,6 +881,7 @@ footer styling ends here
     }
     .mid a {
         bottom: 50px;
+<<<<<<< HEAD
     }
     .copy {
         padding-top: 10px;
@@ -846,6 +895,25 @@ footer styling ends here
     .last-link {
         font-size: 8px;
         text-align: center;
+=======
+    }
+    .copy {
+        padding-top: 10px;
+    }
+}
+
+
+/*media query for 425px starts here*/
+
+@media only screen and (max-width: 425px) {
+    .last-link {
+        font-size: 8px;
+        text-align: center;
+    }
+    .footer-items {
+        justify-content: left;
+        align-items: left;
+>>>>>>> feature-css
     }
     .footer-item:last-child {
         margin-bottom: 20px;
