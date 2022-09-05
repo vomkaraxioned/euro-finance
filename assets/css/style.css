@@ -356,7 +356,7 @@ main styling starts here
     display: block;
     position: absolute;
     top: 0;
-    background: radial-gradient( right bottom, ellipse farthest-side, transparent 20%, #225fab 80%);
+    background: radial-gradient( ellipse farthest-side at 80%, transparent 5%, #225fab 95%);
     content: "";
 }
 
@@ -662,11 +662,12 @@ footer styling ends here
 }
 
 .icon a {
-    position: absolute;
+    position: fixed;
     right: 5%;
     color: #fff;
     font-size: 21px;
     text-indent: -9999px;
+    z-index: 1;
 }
 
 .icon a::before {
@@ -689,6 +690,7 @@ footer styling ends here
 }
 
 .mid a {
+    display: none;
     bottom: 30px;
 }
 
