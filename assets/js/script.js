@@ -15,12 +15,6 @@ checkBoxs.forEach((checkBox) => checkBox.addEventListener('click', () => {
     checkBox.checked = true;
 }));
 
-// //function to change selected box
-// function checkHandler() {
-//     alert("clicked");
-//     checkBox.forEach((checkbox) => checkbox.checked = false);
-//     this.checked;
-// }
 
 //function to call all validation methods
 function validators(fields) {
