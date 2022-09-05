@@ -642,10 +642,10 @@ footer h4 {
 }
 
 footer .wrapper-large {
-    padding: 5px 0;
+    padding: 10px 0;
     position: absolute;
     bottom: 0;
-    background: #0f2d59;
+    background: rgba(15, 45, 89, 0.4);
 }
 
 .copyright {
@@ -660,7 +660,7 @@ footer .wrapper-large {
 .last-link {
     padding: 0 1%;
     border-right: 1px solid #fff;
-    margin-right: 1%;
+    font-size: 10px;
 }
 
 .last-link:last-child {
