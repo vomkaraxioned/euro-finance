@@ -4,11 +4,23 @@
 //form inputs and other required elements and variables initialized
 const form = document.querySelector('form[name=sign-up]');
 const error = document.querySelectorAll('.err');
+const checkBoxs = document.querySelectorAll('input[type=checkbox]');
 let validInput;
-
 //evenlistener on form and cancel button
 form.addEventListener('submit', validation);
 
+//event listener on form checkbox
+checkBoxs.forEach((checkBox) => checkBox.addEventListener('click', () => {
+    checkBoxs.forEach((checkbox) => checkbox.checked = false);
+    checkBox.checked = true;
+}));
+
+// //function to change selected box
+// function checkHandler() {
+//     alert("clicked");
+//     checkBox.forEach((checkbox) => checkbox.checked = false);
+//     this.checked;
+// }
 
 //function to call all validation methods
 function validators(fields) {
