@@ -25,8 +25,7 @@ menu.addEventListener('click', () => {
         icon.style.setProperty("--content", cross);
     }
 });
-menu.addEventListener('')
-    //evenlistener on form and cancel button
+//evenlistener on form and cancel button
 form.addEventListener('submit', validation);
 
 //event listener on form checkbox
