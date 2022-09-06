@@ -777,14 +777,27 @@ footer styling ends here
     .wrapper {
         width: 85%;
     }
-    .menu {
+    .menu,
+    .menu-active {
         display: flex;
         position: relative;
+        color: #fff;
         font-family: 'FontAwesome';
         font-weight: 900;
         text-indent: -9999px;
         justify-content: center;
         align-items: center;
+    }
+    .menu::before {
+        text-indent: 0;
+        content: var(--content);
+        float: right;
+    }
+    .menu-active::before {
+        font-size: 22px;
+        text-indent: 0;
+        content: '\f00d';
+        float: right;
     }
     .navigation {
         width: 40%;
@@ -829,14 +842,6 @@ footer styling ends here
         background: radial-gradient( transparent, #225fab);
         content: "";
     }
-    .menu::before {
-        text-indent: 0;
-        content: var(--content);
-        float: right;
-    }
-    .menu:hover::before {
-        color: #fff;
-    }
     .footer-item:nth-child(2) {
         margin: 0 3%;
     }
@@ -870,6 +875,21 @@ footer styling ends here
 /*media query for 540px starts here*/
 
 @media only screen and (max-width: 540px) {
+    .navigation {
+        width: 50%;
+        border: 1px solid #fff;
+        margin: 0 auto;
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #225fab;
+        flex-direction: column;
+        z-index: 1;
+    }
+    .hero-section {
+        padding-bottom: 200px;
+    }
     .search {
         display: none;
     }

@@ -1,13 +1,9 @@
 /* Author: 
 
 */
-let cross = "\'\f00d\'";
 //menu bar for 764px
 const menu = document.querySelector(".menu");
 menu.on = false;
-//root variable in css
-const icon = document.querySelector(":root");
-console.log(icon);
 const nav = document.querySelector(".navigation");
 //form inputs and other required elements and variables initialized
 const form = document.querySelector('form[name=sign-up]');
@@ -18,9 +14,13 @@ let validInput;
 menu.addEventListener('click', () => {
     if (menu.on != true) {
         menu.on = true;
+        menu.classList.remove("menu");
+        menu.classList.add("menu-active");
         nav.style.display = "flex";
     } else {
         menu.on = false;
+        menu.classList.remove("menu-active");
+        menu.classList.add("menu");
         nav.style.display = "none";
         icon.style.setProperty("--content", cross);
     }
