@@ -968,4 +968,8 @@ footer styling ends here
         border: none;
         margin-bottom: 20px;
     }
+    .logo::before,
+    .logo::after {
+        width: 9%;
+    }
 }
