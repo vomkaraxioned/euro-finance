@@ -223,10 +223,6 @@ li {
     margin: 0 auto;
 }
 
-:root {
-    --content: "\f0c9";
-}
-
 
 /*=================================
 Header styling starts here
@@ -394,6 +390,10 @@ main styling starts here
     color: #6bccf5;
     font-size: 24px;
     z-index: 1;
+}
+
+.menu-active {
+    display: none;
 }
 
 
@@ -790,7 +790,7 @@ footer styling ends here
     }
     .menu::before {
         text-indent: 0;
-        content: var(--content);
+        content: "\f0c9";
         float: right;
     }
     .menu-active::before {
