@@ -1,12 +1,32 @@
 /* Author: 
 
 */
+let cross = "\'\f00d\'";
+//menu bar for 764px
+const menu = document.querySelector(".menu");
+menu.on = false;
+//root variable in css
+const icon = document.querySelector(":root");
+console.log(icon);
+const nav = document.querySelector(".navigation");
 //form inputs and other required elements and variables initialized
 const form = document.querySelector('form[name=sign-up]');
 const error = document.querySelectorAll('.err');
 const checkBoxs = document.querySelectorAll('input[type=checkbox]');
 let validInput;
-//evenlistener on form and cancel button
+//eventlistener on menu 
+menu.addEventListener('click', () => {
+    if (menu.on != true) {
+        menu.on = true;
+        nav.style.display = "flex";
+    } else {
+        menu.on = false;
+        nav.style.display = "none";
+        icon.style.setProperty("--content", cross);
+    }
+});
+menu.addEventListener('')
+    //evenlistener on form and cancel button
 form.addEventListener('submit', validation);
 
 //event listener on form checkbox
